@@ -20,12 +20,17 @@ import qs from 'qs'
 Vue.prototype.$axios = axios    //全局注册，使用方法为:this.$axios
 Vue.prototype.$qs = qs           //全局注册，使用方法为:this.$qs
 
-//实例化 store
-import store from './store'
-import router from './router'
+
+//全局引入模拟数据
+// import mock from './mock'
+// Vue.prototype.$mock = mock 
+require('./mock');   
 
 Vue.config.productionTip = false
 
+//实例化 store
+import store from './store'
+import router from './router'
 new Vue({
   router,
   store,

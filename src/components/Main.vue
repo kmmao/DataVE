@@ -14,6 +14,9 @@ export default {
   components: {
     Footer,
     Header
+  },
+  mounted(){
+    // console.log('res');
   }
 };
 </script>

@@ -14,6 +14,7 @@ export default {
     Main
   },
   mounted() {
+    // console.log(this.$mock);
     //*****************************解决刷新页面数据丢失开始**************************************** */
     if (sessionStorage.getItem("store")) {
       this.$store.replaceState(

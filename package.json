@@ -1,5 +1,5 @@
 {
-  "name": "vue-cil3.0-template",
+  "name": "data-ve",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,7 @@
     "echarts": "^4.5.0",
     "echarts-wordcloud": "^1.1.3",
     "font-awesome": "^4.7.0",
+    "mockjs": "^1.1.0",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "view-design": "^4.0.2",
@@ -38,9 +39,16 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console":"off"
+    },
     "parserOptions": {
       "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
     }
   },
   "browserslist": [
